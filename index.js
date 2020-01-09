@@ -1,19 +1,19 @@
 const { exec } = require('child_process');
 
-function runTerminalCommand(command){
+function runTerminalCommand(command, desc){
     exec(command, (error) => {
         if (error) {
           console.error(`exec error: ${error}`);
           return;
         }
-        console.log(`git add command ran`)
+        console.log(`git ${process.argv[2]} command ran`)
       });
 
 }
 
-runTerminalCommand('git add .')
-runTerminalCommand('git commit -m test2')
-runTerminalCommand('git push')
+runTerminalCommand('git add .', 'add')
+runTerminalCommand('git commit -m test3', 'commit')
+runTerminalCommand('git push', 'push')
 
 
 

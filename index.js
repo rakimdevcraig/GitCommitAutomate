@@ -12,7 +12,7 @@ function runTerminalCommand(command, desc){
 }
 
 runTerminalCommand('git add .', 'add')
-runTerminalCommand('git commit -m test3', 'commit')
+runTerminalCommand('git commit -m test4', 'commit')
 runTerminalCommand('git push', 'push')
 
 

@@ -6,7 +6,7 @@ function runTerminalCommand(command, desc){
           console.error(`exec error: ${error}`);
           return;
         }
-        console.log(`git ${process.argv[2]} command ran`)
+        console.log(`git ${desc} command ran`)
       });
 
 }

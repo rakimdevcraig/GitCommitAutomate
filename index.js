@@ -1,7 +1,9 @@
-const { exec } = require('child_process');
+// node /Users/rakimcraig/Documents/projects/node/githubCommitAutomated/index.js
+
+const { execSync } = require('child_process');
 
 function runTerminalCommand(command, desc){
-    exec(command, (error) => {
+    execSync(command, (error) => {
         if (error) {
           console.error(`exec error: ${error}`);
           return;
@@ -12,7 +14,7 @@ function runTerminalCommand(command, desc){
 }
 
 runTerminalCommand('git add .', 'add')
-runTerminalCommand('git commit -m "added to readme"', 'commit')
+runTerminalCommand('git commit -m "making the function run synchronously"', 'commit')
 runTerminalCommand('git push', 'push')
 
 

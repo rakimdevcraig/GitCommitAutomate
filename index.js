@@ -14,7 +14,7 @@ function runTerminalCommand(command, desc){
 }
 
 runTerminalCommand('git add .', 'add')
-runTerminalCommand('git commit -m "making the function run synchronously"', 'commit')
+runTerminalCommand('git commit -m "Automated commit"', 'commit')
 runTerminalCommand('git push', 'push')
 
 

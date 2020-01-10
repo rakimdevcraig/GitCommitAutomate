@@ -8,8 +8,8 @@ function runTerminalCommand(command, desc){
           console.error(`exec error: ${error}`);
           return;
         }
-        console.log(`git ${desc} command ran`)
       });
+      console.log(`git ${desc} command ran`)
 
 }
 

@@ -1,5 +1,3 @@
-// node /Users/rakimcraig/Documents/projects/node/githubCommitAutomated/index.js
-
 const { execSync } = require('child_process');
 const readline = require('readline');
 
@@ -25,7 +23,7 @@ function userInput() {
     runTerminalCommand('git add .', 'add')
     runTerminalCommand(`git commit -m "${answer}"`, 'commit')
     runTerminalCommand('git push', 'push')
-    rl.close();
+    // rl.close();
   });
 }
 userInput()

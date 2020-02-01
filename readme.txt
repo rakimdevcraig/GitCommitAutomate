@@ -1,3 +1,4 @@
+for it to work on my cpu type 'acommit'
 how do i get the commit messages in the console 
 like if i actually typed the command
 

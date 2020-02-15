@@ -23,7 +23,7 @@ function userInput() {
     runTerminalCommand('git add .', 'add')
     runTerminalCommand(`git commit -m "${answer}"`, 'commit')
     runTerminalCommand('git push', 'push')
-    // rl.close();
+    rl.close();
   });
 }
 userInput()

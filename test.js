@@ -5,7 +5,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question('Please enter a commit message ', (answer) => {
+rl.question('Please enter a commit message: ', (answer) => {
     // TODO: Log the answer in a database
     console.log(`Thank you for your valuable feedback: ${answer}`);
 
